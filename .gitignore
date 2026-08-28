@@ -34,3 +34,6 @@ apps/api/src/generated/
 # Screenshots and browser profiles from apps/api/scripts/preview-*.ts — evidence
 # of a run, never part of the repo.
 apps/api/scripts/.shots/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
