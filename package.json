@@ -8,11 +8,11 @@
     "node": ">=22"
   },
   "scripts": {
-    "dev": "pnpm --parallel --filter \"./apps/*\" dev",
+    "dev": "node init && pnpm --parallel --filter \"./apps/*\" dev",
     "dev:web": "pnpm --filter @tmg180/web dev",
     "dev:api": "pnpm --filter @tmg180/api dev",
-    "build": "pnpm -r build",
-    "start": "pnpm --filter @tmg180/api start",
+    "build": "node init && pnpm -r build",
+    "start": "node init && pnpm --filter @tmg180/api start",
     "lint": "oxlint",
     "clean": "pnpm -r exec rm -rf dist node_modules && rm -rf node_modules"
   },
